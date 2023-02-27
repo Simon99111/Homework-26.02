@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static Shares;
+
+int size = Input("Введите количество чисел");
+int[] array = InputArray(size);
+int pos = Positive(array);
+Console.WriteLine("Количество положительных элементов = " + pos);
